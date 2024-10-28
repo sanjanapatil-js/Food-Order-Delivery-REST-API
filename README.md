@@ -151,3 +151,24 @@ The application comes with initial sample data:
   ]
   ```
 
+
+
+### Docker 🐳
+
+### Steps to Build and Run the Docker Container
+
+1. **Build the Docker Image:**
+   In the terminal, navigate to the directory containing the Dockerfile, and run:
+   ```bash
+   docker build -t food-order-api .
+   ```
+
+2. **Run the Docker Container:**
+   Run the container from the image and map port 5000 in the container to port 5000 on your local machine:
+   ```bash
+   docker run -p 5000:5000 food-order-api
+   ```
+
+Your API should now be accessible at `http://localhost:5000`.
+
+
